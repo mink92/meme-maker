@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="color_options">
+      <input type="color" id="color" />
+      <div
+        class="color_option"
+        style="background: #ff0000"
+        data-color="#ff0000"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #ff7f00"
+        data-color="#ff7f00"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #ffff00"
+        data-color="#ffff00"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #27ae60"
+        data-color="#27ae60"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #0067a3"
+        data-color="#0067a3"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #000080"
+        data-color="#000080"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #8e44ad"
+        data-color="#8e44ad"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #95a5a6"
+        data-color="#95a5a6"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #eb9980"
+        data-color="#eb9980"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #87cefa"
+        data-color="#87cefa"
+      ></div>
+      <div
+        class="color_option"
+        style="background: #ffe4c4"
+        data-color="#ffe4c4"
+      ></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+      <input
+        id="line_width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step="0.1"
+      />
+      <button id="mode_btn">🧺 Fill</button>
+      <button id="reset_btn">❌ Reset</button>
+      <button id="eraser_btn">⚪ Erase</button>
+      <label for="file"
+        >📎 Add Photo<input type="file" accept="image/*" id="file"
+      /></label>
+      <input type="text" placeholder="Add text here :)" id="text" />
+      <button id="save">🎨 Save image</button>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

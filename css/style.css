@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap");
+
+body {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background: gainsboro;
+  font-family: "Noto Sans KR";
+}
+
+canvas {
+  width: 800px;
+  height: 800px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.color_options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.color_option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 5px solid #fff;
+  transition: transform ease-in-out 0.1s;
+}
+
+.color_option:hover {
+  transform: scale(1.2);
+}
+
+input#color {
+  background: #fff;
+  background-color: b;
+}
+
+button,
+label {
+  all: unset; /* css 속성 전부 제거 */
+  padding: 10px 0;
+  font-weight: 500;
+  text-align: center;
+  background-color: salmon;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: opacity linear 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input#file {
+  display: none;
+}
+
+input#text {
+  all: unset;
+  padding: 10px 0;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+}
